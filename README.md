@@ -2,6 +2,79 @@
 
 # Rubric for Rubik’s Cube Simulation and Scope Concepts Assignment
 
+
+# Submission Instructions
+
+This assignment will be submitted through GitHub Classroom. Follow the steps below to complete and submit your work:
+
+## Repository Setup
+1. Accept the GitHub Classroom invitation on Canvas and create your own repository.
+2. Once your repository is created, clone it to your local machine using the following command:
+   ```bash
+   git clone https://classroom.github.com/a/dOlvi4vh
+   ```
+
+## Assignment Structure
+
+Your repository should have the following structure:
+
+```
+/root
+  ├── README.md           # Assignment details
+  ├── answers.txt         # Answers to Questions 1 and 2 in text format
+  ├── SudokuSolver.java   # OR SudokuSolver.py OR SudokuSolver.cpp (based on your language preference)
+  ├── RubiksCube.java     # OR RubiksCube.py OR RubiksCube.cpp (based on your language preference)
+  └── other project files as necessary
+```
+
+## Tasks Breakdown:
+
+### 1. Questions 1 and 2 (Text Format)
+- Create a file named `answers.txt`.
+- In this file, provide the answers to:
+  - **Question 1**: Parse tree and leftmost derivation.
+  - **Question 2**: Scope concepts (static scope, dynamic scope with deep binding, dynamic scope with shallow binding).
+- Use plain text formatting for clarity and include the explanations.
+
+### 2. Question 3: Sudoku Solver (Coding Assignment)
+- Implement your solution for the **Sudoku Solver** in your preferred language (Java, Python, or C++).
+- The filename should be one of the following based on your language:
+  - `SudokuSolver.java` for Java
+  - `SudokuSolver.py` for Python
+  - `SudokuSolver.cpp` for C++
+- Make sure your code is well-documented and includes comments where necessary.
+- Your program should read a predefined Sudoku board and output a valid solution.
+
+### 3. Question 4: Rubik’s Cube Simulation (Coding Assignment)
+- Implement your data structure and functions to simulate a Rubik's Cube in your preferred language.
+- The filename should be one of the following based on your language:
+  - `RubiksCube.java` for Java
+  - `RubiksCube.py` for Python
+  - `RubiksCube.cpp` for C++
+- Your code should allow for flexible cube sizes and implement the logic for rotating layers.
+- Be sure to include comments and explanations for how your data structure works and how rotations are handled.
+
+## Submission Steps:
+1. Once you've completed the assignment, add your files to your repository:
+   ```bash
+   git add answers.txt SudokuSolver.* RubiksCube.*
+   ```
+2. Commit your changes with a meaningful message:
+   ```bash
+   git commit -m "Completed Rubik's Cube and Sudoku Solver Assignment"
+   ```
+3. Push your changes to the GitHub repository:
+   ```bash
+   git push origin main
+   ```
+4. Ensure that all your files have been successfully uploaded to GitHub.
+
+## Important Notes:
+- **Due Date**: Ensure you submit your repository before the deadline specified.
+- **Plagiarism**: Your submission must be your own work. Any form of copying from other students or external sources will result in penalties.
+- **Code Quality**: Ensure your code is clean, well-structured, and follows standard conventions of your chosen programming language.
+
+
 ## Criteria
 
 | Criteria                         | Excellent (10-9)                          | Good (8-7)                               | Satisfactory (6-5)                        | Needs Improvement (4-3)                 | Unsatisfactory (2-0)                     | Score  |

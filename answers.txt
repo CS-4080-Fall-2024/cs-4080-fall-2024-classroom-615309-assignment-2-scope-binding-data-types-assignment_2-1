@@ -53,9 +53,9 @@ Parse Tree
 Problem 2: Scope Concepts
 static scoping, the output will be: 180
 
-dynamic scoping and deep binding, the output will be: 128
+dynamic scoping and deep binding, the output will be: 126
 
-dynamic scoping and shallow binding, the output will be: 155
+dynamic scoping and shallow binding, the output will be: 101
 
 
 

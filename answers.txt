@@ -1,1 +1,55 @@
+Problem 1: Parse Tree and Leftmost Derivation
+Leftmost Derivation
+<Statement> => <Assignment>
+=> <Identifier> = <Expression>
+=> A = <Expression>
+=> A = <Term>
+=> A = <Term> * <Factor>
+=> A = <Factor> * <Factor>
+=> A = <Identifier> * <Factor>
+=> A = B * <Factor>
+=> A = B * ( <Expression> )
+=> A = B * ( <Term> )
+=> A = B * ( <Term> * <Factor> )
+=> A = B * ( <Factor> * <Factor> )
+=> A = B * ( <Identifier> * <Factor> )
+=> A = B * ( C * <Factor> )
+=> A = B * ( C * ( <Expression> ) )
+=> A = B * ( C * ( <Expression> + <Term> ) )
+=> A = B * ( C * ( <Term> + <Term> ) )
+=> A = B * ( C * ( <Factor> + <Term> ) )
+=> A = B * ( C * ( <Identifier> + <Term> ) )
+=> A = B * ( C * ( A + <Term> ) )
+=> A = B * ( C * ( A + <Factor> ) )
+=> A = B * ( C * ( A + <Identifier> ) )
+=> A = B * ( C * ( A + B ) )
+
+
+Parse Tree
+                    Statement
+                       |
+                   Assignment
+                   /       \
+           Identifier   Expression
+               |              |
+               A             Term
+                             /   \
+                         Term     Factor
+                      /   |  \       |
+                  Term   *   Factor
+                  |            |
+              Factor      ( Expression )
+                |           /         \
+          Identifier    Term        Expression
+               |        /   \        /   |   \
+                 B    Term  Factor Term  +  Term
+                    /   \            |       |    \
+                Factor    *     Identifier Factor Identifier
+                      |             |        |        |         
+                  Identifier        C        A        B
+                      |
+                      C
+
+
+
 

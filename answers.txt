@@ -52,12 +52,52 @@ Parse Tree
 
 Problem 2: Scope Concepts
 static scoping, the output will be: 180
-
+add(v)
+bar        v=69
+           u=42 
+           z=69 
+foo(u,13)  v=69
+           u=42
+           w=17 
+            
+main      u=42
+          v= 69
+          w=17
+          x=17
+u:= v + u + v
+   69 + 42 + 69 = 180
 dynamic scoping and deep binding, the output will be: 126
+add(v)
+bar      v =42
+          u=42
+          w=42
 
+foo(u,13)  v=42
+           u=42
+           w=17
+
+main      u=42
+          v=69
+          w=17
+          x=
+u:= v + u + v
+   42 + 42 + 42 = 126 
 dynamic scoping and shallow binding, the output will be: 101
+add(v)
+bar      v =42
+          u=17
+          w=42
 
+foo(u,13)  v=42
+           u=42
+           w=17
 
+main      u=42
+          v=69
+          w=17
+          x=42
+u:= v + u + v
+   42 + 17 + 42 = 101
 
 
 
